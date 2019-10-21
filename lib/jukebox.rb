@@ -28,12 +28,12 @@ def play(songs)
   #   song_id = songs.find_index(input)
   # end
   
-  if !songs.include?(input)
-    "Invalid input, please try again"
-    play(songs)
-  else 
-    puts "Playing #{songs[song_id]}"
-  end
+  # if !songs.include?(input)
+  #   "Invalid input, please try again"
+  #   play(songs)
+  # else 
+  #   puts "Playing #{songs[song_id]}"
+  # end
 end
 
 def list(songs)
