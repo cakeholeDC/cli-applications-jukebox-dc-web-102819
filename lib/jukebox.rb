@@ -45,6 +45,7 @@ def run(songs)
   puts "Please enter a command"
   command = gets.strip
   
+  
   case command
     when "exit"
       exit_jukebox
@@ -57,5 +58,6 @@ def run(songs)
       help
     else
       "Error: '#{command}' is not a valid command"
-  end
+  end #=> END case command
+  
 end 
