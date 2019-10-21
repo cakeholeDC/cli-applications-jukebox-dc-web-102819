@@ -23,7 +23,7 @@ def play(songs)
   input = gets.strip
   
   if input.to_i != 0 
-    song_id = input-1
+    song_id = input-=1
   else
     song_id = songs.find_index(input)
   end
