@@ -45,19 +45,20 @@ def run(songs)
   puts "Please enter a command"
   command = gets.strip
   
-  
-  case command
-    when "exit"
-      exit_jukebox
-      break
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "help"
-      help
-    else
-      "Error: '#{command}' is not a valid command"
-  end #=> END case command
+  while command do
+    case command
+      when "exit"
+        exit_jukebox
+        break
+      when "list"
+        list(songs)
+      when "play"
+        play(songs)
+      when "help"
+        help
+      else
+        "Error: '#{command}' is not a valid command"
+    end #=> END case command
+  end #=> END while
   
 end 
