@@ -42,10 +42,12 @@ def exit_jukebox
 end
 
 def run(songs)
-  puts "Please enter a command"
-  command = gets.strip
+  
   
   while command do
+    puts "Please enter a command"
+    command = gets.strip
+  
     case command
       when "exit"
         exit_jukebox
@@ -59,6 +61,7 @@ def run(songs)
       else
         "Error: '#{command}' is not a valid command"
     end #=> END case command
+    
   end #=> END while
   
 end 
