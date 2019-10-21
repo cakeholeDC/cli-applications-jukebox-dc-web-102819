@@ -42,14 +42,14 @@ def exit_jukebox
 end
 
 def run(songs)
-  exit = false
-  while exit == false do
+  contine = true
+  while continue == true do
     puts "Please enter a command"
     command = gets.strip
   
     case command
       when "exit"
-        exit = true
+        contine = false
         exit_jukebox
         break
       when "list"
