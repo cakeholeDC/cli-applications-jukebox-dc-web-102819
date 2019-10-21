@@ -43,7 +43,7 @@ end
 
 def run(songs)
   contine = true
-  while continue == true do
+  while continue do
     puts "Please enter a command"
     command = gets.strip
   
