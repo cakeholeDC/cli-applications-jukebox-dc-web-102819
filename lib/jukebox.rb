@@ -62,4 +62,5 @@ def run(songs)
         puts "Error: '#{command}' is not a valid command"
     end #=> END case command
   end #=> END while
-end 
+end
+end
