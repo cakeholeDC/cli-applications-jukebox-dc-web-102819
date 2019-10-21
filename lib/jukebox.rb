@@ -29,6 +29,7 @@ def play(songs)
     play(songs)
   else 
     puts "Playing #{songs[song_id]}"
+  end
 end
 
 def list(songs)
