@@ -20,7 +20,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input = gets.strip
+  input = gets.strip.to_i
   
   song_id = input.is_a? Integer ? input-1 : songs.find_index(input)
   
