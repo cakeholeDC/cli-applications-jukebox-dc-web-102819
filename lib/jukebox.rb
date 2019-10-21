@@ -41,22 +41,22 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   puts "Please enter a command"
   command = gets.strip
-  
-  case command.downcase
+  case command
+    when "exit"
+      exit_jukebox
+      break
     when "list"
-      list
+      list(songs)
       run
     when "play"
-      play
+      play(songs)
       run
     when "help"
       help
       run
-    when "exit"
-      exit_jukebox
     else
       "Error: '#{command}' is not a valid command"
       run
