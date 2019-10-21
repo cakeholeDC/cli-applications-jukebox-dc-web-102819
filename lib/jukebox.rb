@@ -60,7 +60,6 @@ def run(songs)
         help
       else
         "Error: '#{command}' is not a valid command"
-    end #=> END case command
     
   end #=> END while
   
