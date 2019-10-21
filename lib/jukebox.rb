@@ -22,11 +22,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   
-  if input.to_i != 0 
-    song_id = input-=1
-  else
-    song_id = songs.find_index(input)
-  end
+  song_id = input.to_i != 0 ? input-=1 : songs.find_index(input) 
   
   if !songs.include?(input)
     "Invalid input, please try again"
